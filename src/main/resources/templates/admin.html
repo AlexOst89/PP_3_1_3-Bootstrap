@@ -59,7 +59,6 @@
                                                 <th>Last Name</th>
                                                 <th>Age</th>
                                                 <th>Email</th>
-                                                <th>Password</th>
                                                 <th>ROLES</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
@@ -72,7 +71,6 @@
                                                 <td th:text="${user.userLastName}"></td>
                                                 <td th:text="${user.userAge}"></td>
                                                 <td th:text="${user.email}"></td>
-                                                <td>******</td>
                                                 <td>
                                                     <span th:each="role, iterStat : ${user.roles}"
                                                           th:text="${#strings.substringAfter(role.name, '_')} + (${iterStat.last ? '' : ' '})">
